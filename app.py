@@ -1,6 +1,7 @@
 from sshtunnel import SSHTunnelForwarder
 import paramiko
-install_Frpc('5140',frpconfigfile,use_frpc)
+import time
+#install_Frpc('5140',frpconfigfile,use_frpc)
 # SSH 连接参数
 ssh_host = 'ssh.intern-ai.org.cn'
 ssh_port = 39126
@@ -30,7 +31,7 @@ try:
         tunnel.start()
 
         # 在此处添加需要执行的操作，tunnel 会在此期间保持活跃状态
-        !sleep 999999
+        time.sleep(9999999)
 except paramiko.AuthenticationException:
     print("Authentication failed, please verify your credentials.")
 except paramiko.SSHException as ssh_exception:
