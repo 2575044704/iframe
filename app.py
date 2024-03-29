@@ -29,7 +29,7 @@ try:
 
         # 保持 tunnel 活跃
         tunnel.start()
-
+        os.system("curl http://127.0.0.1:7860")
         # 在此处添加需要执行的操作，tunnel 会在此期间保持活跃状态
         time.sleep(9999999)
 except paramiko.AuthenticationException:
