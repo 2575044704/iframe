@@ -1,6 +1,7 @@
 from sshtunnel import SSHTunnelForwarder
 import paramiko
 import time
+import os
 #install_Frpc('5140',frpconfigfile,use_frpc)
 # SSH 连接参数
 ssh_host = 'ssh.intern-ai.org.cn'
