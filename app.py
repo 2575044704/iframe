@@ -14,7 +14,7 @@ local_port = 7860
 
 # 远程端口
 remote_host = 'localhost'  # 这里假设远程服务器上要映射的端口是localhost
-remote_port = 8083
+remote_port = 7860
 
 try:
     # 创建 SSH 端口转发器
